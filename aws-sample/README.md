@@ -13,7 +13,7 @@ RUN touch test
 上記の簡単なDockerfileをLocalPCで作成し、
 
 ```sh
-docker build linux/amd64 .
+docker build --platform linux/amd64 .
 ```
 
 でDocker imageを作成した。
@@ -74,5 +74,5 @@ docker run -it <image> sh
 
 ## testのファイルの存在を確認
 
-shellでlsコマンドでtestファイルがあることを確認した。
+shellにおいてlsコマンドでtestファイルがあることを確認した。
 このtestファイルはDockerfileから作成したもの。

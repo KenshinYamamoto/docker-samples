@@ -1,6 +1,6 @@
 # 概要
 
-dockerを使用してJupyterLabでの回発環境を作成するデモ
+dockerを使用してJupyterLabでの開発環境を作成するデモ
 
 ## ビルドコマンド
 
