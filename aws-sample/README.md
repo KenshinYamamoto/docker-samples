@@ -52,6 +52,10 @@ get <ダウンロードするファイルのpath> <ダウンロード先のpath>
 
 ## tarファイルを解凍する
 
+```sh
+ssh -i <key名>.pem ubuntu@<publicDNS>
+```
+
 SSHでAWSへ接続後、
 
 ```sh
