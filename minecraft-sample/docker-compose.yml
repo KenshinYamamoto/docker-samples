@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  minecraft-server:
+    image: itzg/minecraft-server
+    container_name: server-test
+    environment:
+      # /* acceptance of EULA */
+      EULA: 'TRUE'
+      # /* whitelist settings */
+      # ENFORCE_WHITELIST: 'TRUE'
+      # WHITELIST: 'member1,member2,...'
+    # /* -p option */
+    ports:
+      - '25565:25565'
+    # /* -i option */
+    stdin_open: true
+    # /* -t option */
+    tty: true
+    # /* --cpus setting */
+    cpus: 4
+    # /* --memory setting */
+    mem_limit: 10g
