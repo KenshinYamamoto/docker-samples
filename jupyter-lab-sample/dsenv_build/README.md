@@ -2,26 +2,10 @@
 
 dockerを使用してJupyterLabでの開発環境を作成するデモ
 
-## ビルドコマンド
-
-- macの場合
+## コマンド
 
 ```sh
-docker build --platform linux/amd64 .
-```
-
-- windowsの場合
-
-```sh
-docker build .
-```
-
-でイメージを作成。
-
-## イメージ作成後
-
-```sh
-docker run -p 8888:8888 -v <マウント元ファイル>:<マウント先ファイル> --name <コンテナ名> <image>
+docker-compose up -d
 ```
 
 でポート8888を使用してJupyterLabを起動可能。
